@@ -64,8 +64,7 @@ const Product = new Schema
 ### Wireframes
 ![imgAlt](https://i.imgur.com/kgBBxDd.png)
 
-### Component Heiarchy
-![imgAlt](https://i.imgur.com/bnLhk4b.png)
+
 
 ### ERD
 ![imgAlt](https://i.imgur.com/S4ABas8.png)
