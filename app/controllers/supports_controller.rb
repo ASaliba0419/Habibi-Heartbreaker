@@ -1,5 +1,6 @@
 class SupportsController < ApplicationController
   before_action :set_support, only: [:show, :update, :destroy]
+  before_action :authorize_request, only: [:create, :update, :show, :destroy]
 
   # GET /supports
   def index
