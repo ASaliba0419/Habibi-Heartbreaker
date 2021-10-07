@@ -16,7 +16,7 @@ import { getProducts, createSupport, updateSupport, deleteSupport, getSupport } 
 import Comments from './screens/Comments/Comments'
 import About from './screens/About/About'
 import Gallery from './screens/Gallery/Gallery'
-import PviewForm from './screens/PviewForm/PviewForm';
+import CommentForm from './screens/CommentForm/CommentForm';
 
 
 
@@ -69,29 +69,19 @@ function App() {
   }, [])
 
 
-  useEffect(() => {
-    const fetchSupportsCreate = async () => {
-      const supportList = await createSupport();
-      setSupports(supportList)
-    }
-    fetchSupportsCreate()
-  }, [])
 
-  useEffect(() => {
+
+
     const fetchSupportsUpdate = async () => {
       const supportList = await updateSupport();
       setSupports(supportList)
     }
-    fetchSupportsUpdate()
-  }, [])
 
-  useEffect(() => {
     const fetchSupportsDelete = async () => {
       const supportList = await deleteSupport();
       setSupports(supportList)
     }
-    fetchSupportsDelete()
-  }, [])
+
 
   const handleSupportCreate = async (supportData) => {
     const newSupport = await createSupport(supportData)
@@ -129,7 +119,7 @@ function App() {
               <Gallery />
             </Route>
             <Route path='/show-your-support'>
-              <PviewForm
+              <CommentForm
                 handleSupportCreate={handleSupportCreate}
                 supports={supports}
                 />

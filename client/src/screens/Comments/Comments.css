@@ -1,0 +1,22 @@
+.comment-container {
+  display: flex;
+  justify-content: center;
+}
+
+.descrip {
+  display: flex;
+  justify-content: center;
+
+}
+
+.image-comments {
+  height: 650px;
+}
+
+.comment-title {
+  
+}
+
+.add-comment-button {
+
+}

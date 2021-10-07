@@ -1,6 +1,6 @@
 import React, { useState } from 'react'
 
-const PviewForm = (props) => {
+const CommentForm = (props) => {
   const [formData, setFormData] = useState({
     image: '',
     description: ''
@@ -56,5 +56,5 @@ const PviewForm = (props) => {
   )
 }
 
-export default PviewForm
+export default CommentForm
 

@@ -1,25 +1,26 @@
 import React from 'react'
 import { Link } from 'react-router-dom'
+import './Comments.css'
 
 const Comments = (props) => {
   return (
     <>
       <div>
-      This is the comments page
+        <p>View other supporters, or create your own here!</p>
       </div>
       <Link to='/show-your-support'>
-        <button>Add</button>
+        <button className="add-comment-button">Add</button>
       </Link>
 
 
-      <p>{props.supports}</p>
-
-
-
-
-
-
-
+      {props.supports.map(support => (
+        <>
+          <div className="comment-container">
+            <img className="image-comments" src={support.image} alt={support.description} />
+          </div>
+          <p className="descrip">{support.description}</p>
+        </>
+      ))}
 
     </>
   )

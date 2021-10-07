@@ -17,21 +17,17 @@
   color: white;
   font-size: 1.3rem;
 }
-#title2{
-  color: white;
-}
 
-.comments-nav {
+a,
+.comments-nav,
+#title2 {
   color: white;
 }
 
 a:link {
-  color: black;
   text-decoration: none;
 }
-a {
-  color: white;
-}
+
 
 #logout-btn {
   background: none!important;
