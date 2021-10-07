@@ -71,17 +71,3 @@ class SupportsController < ApplicationController
 end
 
 
-# def create
-#   @product = Product.find(params[:product_id])
-#   @support = Support.new(support_params)
-  
-#   if @current_user.id == @support.user_id
-#     if @support.save
-#       render json: @support, status: :created, location: @support
-#     else
-#       render json: @support.errors, status: :unprocessable_entity
-#     end
-#   else
-#     render json: "Unauthorized", status: :unauthorized
-#   end
-# end
