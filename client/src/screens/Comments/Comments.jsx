@@ -12,7 +12,7 @@ const Comments = (props) => {
       </Link>
 
 
-      <p>{props.description}</p>
+      <p>{props.supports}</p>
 
 
 
