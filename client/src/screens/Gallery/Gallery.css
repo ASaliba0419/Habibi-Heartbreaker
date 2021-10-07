@@ -1,0 +1,8 @@
+.gallery-images {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 20vh;
+  width: 50vw;
+  gap: 15vh;
+}

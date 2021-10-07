@@ -1,0 +1,31 @@
+.about-description {
+  display: flex;
+  justify-content: center;
+}
+
+#ab-title {
+  text-align: right;
+  position: absolute;
+  top: 15vh;
+  left: 61vw;
+}
+
+#descrip {
+  text-align: center;
+  width: 30%;
+  font-size: 1.5rem;
+  position: absolute;
+  top: 25vh;
+  left: 51vw;
+}
+
+
+
+.about-pic {
+  display: flex;
+  height: 60vh;
+  width: 100vw;
+  position: absolute;
+  top: 22vh;
+  left: 10vw;
+}

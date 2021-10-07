@@ -5,17 +5,22 @@ import { Route, useHistory } from 'react-router-dom';
 import SignUp from './screens/SignUp/SignUp';
 import SignIn from './screens/SignIn/SignIn'
 import Layout from './components/Layout/Layout'
-
+import Products from './screens/Products/Products';
 import {
   loginUser,
   registerUser,
   verifyUser,
   removeToken
 } from './services/users.js';
+import { getProducts } from './services/products';
+import Comments from './screens/Comments/Comments'
+import About from './screens/About/About'
+import Gallery from './screens/Gallery/Gallery'
 
 
 
 function App() {
+  const [products, setProducts] = useState([])
 
   const [currentUser, setCurrentUser] = useState(null);
   const history = useHistory();
@@ -46,6 +51,14 @@ function App() {
     removeToken();
   };
 
+  useEffect(() => {
+    const fetchProducts = async () => {
+      const productList = await getProducts();
+      setProducts(productList)
+    }
+    fetchProducts()
+  }, [])
+ 
 
 
   return (
@@ -62,6 +75,18 @@ function App() {
             </Route>
             <Route path="/sign-in">
               <SignIn handleLogin={handleLogin} />
+            </Route>
+            <Route path='/products'>
+              <Products products={products}/>
+            </Route>
+            <Route path='/comments'>
+              <Comments />
+            </Route>
+            <Route path='/about-the-owner'>
+              <About />
+            </Route>
+            <Route path='/gallery'>
+              <Gallery />
             </Route>
           </Layout>
         </switch>

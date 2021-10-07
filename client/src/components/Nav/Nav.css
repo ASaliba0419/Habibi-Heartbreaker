@@ -2,7 +2,7 @@
   /* border: 2px solid red; */
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: space-around;
   background-color: black;
 }
 .navbar2 {
@@ -18,6 +18,10 @@
   font-size: 1.3rem;
 }
 #title2{
+  color: white;
+}
+
+.comments-nav {
   color: white;
 }
 

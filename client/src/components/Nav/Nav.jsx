@@ -21,6 +21,7 @@ const Nav = (props) => {
               <Link to='/about-the-owner'>About the Owner</Link>
               <Link to='/products'>Shop Now</Link>
               <Link to='/'><h1 id='title'>Habibi Heart-Breaker</h1></Link>
+              <Link to='/comments' id='comments-nav'>Comments</Link>
               <Link to='/sign-up'>Sign Up</Link>
               <Link to='/sign-in'>Login</Link>
 
@@ -30,8 +31,9 @@ const Nav = (props) => {
             <div>
               <div className="navbar">
                 <Link to='/gallery'>Gallery</Link>
-                <Link to='/about-the-owner'>About the Owner</Link>
                 <Link to='/products'>Shop Now</Link>
+                <Link to='/about-the-owner'>About the Owner</Link>
+                <Link to='/comments' id='comments-nav'>Comments</Link>
                 <Link to='/cart'>My Cart</Link>
               </div>
             </div>
