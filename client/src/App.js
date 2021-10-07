@@ -12,16 +12,17 @@ import {
   verifyUser,
   removeToken
 } from './services/users.js';
-import { getProducts } from './services/products';
+import { getProducts, createSupport, updateSupport, deleteSupport, getSupport } from './services/products';
 import Comments from './screens/Comments/Comments'
 import About from './screens/About/About'
 import Gallery from './screens/Gallery/Gallery'
+import PviewForm from './screens/PviewForm/PviewForm';
 
 
 
 function App() {
   const [products, setProducts] = useState([])
-
+  const [supports, setSupports] = useState([])
   const [currentUser, setCurrentUser] = useState(null);
   const history = useHistory();
 
@@ -58,7 +59,44 @@ function App() {
     }
     fetchProducts()
   }, [])
- 
+
+  useEffect(() => {
+    const fetchSupports = async () => {
+      const supportList = await getSupport();
+      setSupports(supportList)
+    }
+    fetchSupports()
+  }, [])
+
+
+  useEffect(() => {
+    const fetchSupportsCreate = async () => {
+      const supportList = await createSupport();
+      setSupports(supportList)
+    }
+    fetchSupportsCreate()
+  }, [])
+
+  useEffect(() => {
+    const fetchSupportsUpdate = async () => {
+      const supportList = await updateSupport();
+      setSupports(supportList)
+    }
+    fetchSupportsUpdate()
+  }, [])
+
+  useEffect(() => {
+    const fetchSupportsDelete = async () => {
+      const supportList = await deleteSupport();
+      setSupports(supportList)
+    }
+    fetchSupportsDelete()
+  }, [])
+
+  const handleSupportCreate = async (supportData) => {
+    const newSupport = await createSupport(supportData)
+    setSupports((prevState) => [...prevState, newSupport]);
+  };
 
 
   return (
@@ -77,16 +115,24 @@ function App() {
               <SignIn handleLogin={handleLogin} />
             </Route>
             <Route path='/products'>
-              <Products products={products}/>
+              <Products products={products} />
             </Route>
-            <Route path='/comments'>
-              <Comments />
+            <Route path='/supports'>
+              <Comments
+                getSupport={getSupport}
+                supports={supports}/>
             </Route>
             <Route path='/about-the-owner'>
               <About />
             </Route>
             <Route path='/gallery'>
               <Gallery />
+            </Route>
+            <Route path='/show-your-support'>
+              <PviewForm
+                handleSupportCreate={handleSupportCreate}
+                supports={supports}
+                />
             </Route>
           </Layout>
         </switch>

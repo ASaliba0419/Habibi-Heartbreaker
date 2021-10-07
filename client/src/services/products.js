@@ -19,6 +19,16 @@ export const getProduct = async (id) => {
   }
 };
 
+export const getSupport = async () => {
+  try {
+    const response = await api.get("/supports");
+    return response.data;
+  } catch (error) {
+    throw error;
+  }
+
+}
+
 export const createSupport = async (support) => {
   try {
     const response = await api.post("/supports", support);
