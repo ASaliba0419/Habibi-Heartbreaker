@@ -17,13 +17,8 @@ class SupportsController < ApplicationController
 
   # POST /supports
   def create
-    if !@correct_user
-      render json: "Unauthorized", status: :unauthorized
-      return
-    end
-    @product = Product.find(params[:product_id])
     @support = Support.new(support_params)
-    
+    @support.user = @current_user
     if @support.save
       render json: @support, status: :created, location: @support
     else
@@ -61,11 +56,13 @@ class SupportsController < ApplicationController
 
     # Only allow a list of trusted parameters through.
     def support_params
-      params.require(:support).permit(:image, :description, :user_id, :product_id)
+      params.require(:support).permit(:image, :description, :user_id)
     end
 
     def only_user_crud
-      @correct_user = @current_user.id == support_params[:user_id] 
+      # @correct_user = @current_user.id == support_params[:user_id] 
+      @support = Support.find(params[:id])
+      @correct_user = @current_user.id == @support[:user_id] 
     end
 
 end
