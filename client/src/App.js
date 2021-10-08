@@ -13,10 +13,10 @@ import {
   removeToken
 } from './services/users.js';
 import { getProducts, createSupport, updateSupport, deleteSupport, getSupport } from './services/products';
-import Comments from './screens/Comments/Comments'
+import Comments from './screens/Supports/Comments/Comments'
 import About from './screens/About/About'
 import Gallery from './screens/Gallery/Gallery'
-import CommentForm from './screens/CommentForm/CommentForm';
+import CommentForm from './screens/Supports/CommentForm/CommentForm';
 
 
 
@@ -25,6 +25,7 @@ function App() {
   const [supports, setSupports] = useState([])
   const [currentUser, setCurrentUser] = useState(null);
   const history = useHistory();
+
 
   useEffect(() => {
     const handleVerify = async () => {
@@ -49,7 +50,8 @@ function App() {
   const handleLogout = () => {
     setCurrentUser(null);
     localStorage.removeItem('authToken');
-    removeToken();
+    removeToken()
+    history.push('/');
   };
 
   useEffect(() => {
@@ -72,15 +74,15 @@ function App() {
 
 
 
-    const fetchSupportsUpdate = async () => {
-      const supportList = await updateSupport();
-      setSupports(supportList)
-    }
+  const handleSupportUpdate = async (supportData) => {
+    const updSupport = await updateSupport(supportData);
+    setSupports((prevState) => [...prevState, updSupport]);
+  }
 
-    const fetchSupportsDelete = async () => {
-      const supportList = await deleteSupport();
-      setSupports(supportList)
-    }
+  const handleSupportDelete = async (id) => {
+    await deleteSupport(id)
+    setSupports((prevState) => prevState.filter((supportItem) => supportItem.id !== id))
+  }
 
 
   const handleSupportCreate = async (supportData) => {
@@ -110,7 +112,9 @@ function App() {
             <Route path='/supports'>
               <Comments
                 getSupport={getSupport}
-                supports={supports}/>
+                supports={supports}
+                handleSupportDelete={handleSupportDelete}
+              />
             </Route>
             <Route path='/about-the-owner'>
               <About />
@@ -121,8 +125,9 @@ function App() {
             <Route path='/show-your-support'>
               <CommentForm
                 handleSupportCreate={handleSupportCreate}
+                handleSupportUpdate={handleSupportUpdate}
                 supports={supports}
-                />
+              />
             </Route>
           </Layout>
         </switch>

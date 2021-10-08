@@ -5,8 +5,6 @@ export default function Products(props) {
 
   return (
     <>
-
-
     <div className='product-container'>
       {props.products.map((product) => (
         <div key={product.id}>
@@ -19,8 +17,3 @@ export default function Products(props) {
       </>
   );
 }
-
-
-      
-
-

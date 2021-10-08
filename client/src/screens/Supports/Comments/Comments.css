@@ -1,0 +1,40 @@
+.comment-container {
+  display: flex;
+  justify-content: center;
+}
+
+.descrip {
+  display: flex;
+  justify-content: center;
+
+}
+
+.image-comments {
+  height: 650px;
+}
+
+.comment-title {
+  display: flex;
+  justify-content: center;
+  font-size: 2rem;
+}
+
+.add-comment-button {
+  display: flex;
+  justify-content: center;
+
+}
+
+.comment-buttons {
+  display: flex;
+  justify-content: space-around;
+  margin: 0 25vh;
+}
+
+.edit-comment {
+
+}
+
+.delete-comment {
+
+}

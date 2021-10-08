@@ -6,7 +6,7 @@ const Comments = (props) => {
   return (
     <>
       <div>
-        <p>View other supporters, or create your own here!</p>
+        <p className="comment-title">View other supporters, or create your own here!</p>
       </div>
       <Link to='/show-your-support'>
         <button className="add-comment-button">Add</button>
@@ -19,6 +19,20 @@ const Comments = (props) => {
             <img className="image-comments" src={support.image} alt={support.description} />
           </div>
           <p className="descrip">{support.description}</p>
+          <div className="comment-buttons">
+
+
+            
+            <button className="edit-comment">Edit</button>
+            <button onClick={() => {props.handleSupportDelete(support.id)}}>
+            Delete
+          </button>
+
+          </div>
+          <br />
+          <br />
+          <br />
+          <br />
         </>
       ))}
 
