@@ -1,31 +1,28 @@
-.about-description {
+.about-container {
   display: flex;
-  justify-content: center;
+  padding: 15vh;
 }
 
-#ab-title {
-  text-align: right;
-  position: absolute;
-  top: 15vh;
-  left: 61vw;
+.about-view {
+  display: flex;
+  justify-content: space-around;
+  height: 60vh;
+}
+
+.about-description {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  
 }
 
 #descrip {
+  padding: 0 7vw;
+  font-size: 1.9rem;
   text-align: center;
-  width: 30%;
-  font-size: 1.5rem;
-  position: absolute;
-  top: 25vh;
-  left: 51vw;
 }
 
-
-
-.about-pic {
+#ab-title {
   display: flex;
-  height: 60vh;
-  width: 100vw;
-  position: absolute;
-  top: 22vh;
-  left: 10vw;
+  justify-content: center;
 }

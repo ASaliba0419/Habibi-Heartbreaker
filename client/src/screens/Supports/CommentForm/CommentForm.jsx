@@ -1,14 +1,11 @@
 import React, { useState } from 'react'
-import { useHistory } from 'react-router-dom';
 
 
 const CommentForm = (props) => {
-  const history = useHistory();
   const [formData, setFormData] = useState({
     image: '',
     description: ''
   })
-
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -17,8 +14,6 @@ const CommentForm = (props) => {
       [name]: value,
     }));
   };
-
-
 
   return (
     <div className='form-wrapper'>

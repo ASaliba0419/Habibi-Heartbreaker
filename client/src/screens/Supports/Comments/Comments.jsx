@@ -12,7 +12,6 @@ const Comments = (props) => {
         <button className="add-comment-button">Add</button>
       </Link>
 
-
       {props.supports.map(support => (
         <>
           <div className="comment-container">
@@ -23,7 +22,11 @@ const Comments = (props) => {
 
 
             
-            <button className="edit-comment">Edit</button>
+          <Link to={`/supports/${support.id}/edit`}>
+            <button>Edit</button>
+          </Link>
+
+
             <button onClick={() => {props.handleSupportDelete(support.id)}}>
             Delete
           </button>

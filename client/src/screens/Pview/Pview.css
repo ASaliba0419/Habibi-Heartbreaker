@@ -1,0 +1,36 @@
+.container-view {
+  margin: 7%;
+}
+
+.product-view {
+  display: flex;
+  justify-content: space-around;
+}
+
+.product-stuff {
+  display: flex;
+  align-content: center;
+  text-align: center;
+  flex-direction: column;
+  gap: 30px;
+}
+
+
+#pname {
+  font-size: 1.5rem;
+}
+
+#psize {
+  font-size: 1.2rem;
+
+}
+
+#pprice {
+  font-size: 1.2rem;
+
+}
+
+#pdes {
+  font-size: 1.2rem;
+
+}
