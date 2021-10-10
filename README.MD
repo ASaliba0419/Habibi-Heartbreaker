@@ -85,7 +85,6 @@ const Product = new Schema
     |__ ProductList.jsx
     |__ ProductView.jsx
     |__ AdminProductList.jsx
-    |__ AdminProductView.jsx
     |__ Cart.jsx
 |__ App.js/
 |__ App.css/
