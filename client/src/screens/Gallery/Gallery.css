@@ -1,6 +1,5 @@
 .gallery-container {
   display: flex;
-  border: solid black 2px;
   justify-content: center;
 }
 
@@ -24,7 +23,6 @@
   width: 40vw;
   display: flex;
   justify-content: center;
-  border: green solid 2px;
   margin-left: 17vw;
 }
 
@@ -42,7 +40,6 @@
     width: 50vw;
     display: flex;
     justify-content: center;
-    border: green solid 2px;
     margin-left: 14vw;
   }
 }
@@ -61,7 +58,6 @@
     width: 50vw;
     display: flex;
     justify-content: center;
-    border: green solid 2px;
     margin-left: 14vw;
   }
 }
@@ -80,7 +76,6 @@
     width: 60vw;
     display: flex;
     justify-content: center;
-    border: green solid 2px;
     margin-left: 7vw;
   }
 }
@@ -99,7 +94,6 @@
     width: 75vw;
     display: flex;
     justify-content: center;
-    border: green solid 2px;
     margin-left: 12vw;
   }
 }
