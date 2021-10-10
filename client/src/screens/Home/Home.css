@@ -81,7 +81,57 @@ body {
   text-align: center;
 }
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1200px) {
+
+  .home-images {
+    display: flex;
+    flex-direction: column;
+    height: 1vh;
+    width: 1vw;
+    margin-top: 295vh;
+  }
+
+  #shirts {
+    width: 100vw;
+  }
+
+  #hoodies {
+    width: 100vw;
+  }
+
+  #crewnecks {
+    width: 100vw;
+  }
+  
+}
+
+
+@media only screen and (max-width: 800px) {
+
+  .home-images {
+    display: flex;
+    flex-direction: column;
+    height: 1vh;
+    width: 1vw;
+    margin-top: 202vh;
+  }
+
+  #shirts {
+    width: 100vw;
+  }
+
+  #hoodies {
+    width: 100vw;
+  }
+
+  #crewnecks {
+    width: 100vw;
+  }
+  
+}
+
+
+@media only screen and (max-width: 400px) {
 
   .home-images {
     display: flex;
