@@ -3,7 +3,7 @@
 
 ### Description
 
-Elliot Jarrous clothing is a brand with an ongoing Arab-Centric theme. Beginning with a local pop up May of 2021, we decided to think bigger and better with our brand going forward. This is where you can find new releases and much more from our little world. 
+Elliot Jarrous clothing is a brand with an ongoing Arab-Centric theme. This project is a showcase to Elliot Jarrous line of clothes, named "Habibi Heart-Breaker"
 
 
 ### Schema for users
@@ -151,8 +151,9 @@ const Product = new Schema
 ### Schedule 
 | Day      | Deliverable                                                 | Status     |
 | -------- | ----------------------------------------------------------- | ---------- |
-| October 4 | Client consultation / Wireframes / Timeframes / README.md / Back-end development| Incomplete |
-| October 5 | Back-end development cont. / Backend review and deployment                      | Incomplete |
-| October 6 | Front-end development / Front-end review and deployment                         | Incomplete |
-| October 7 | CSS                                                                             | Incomplete |
-| October 8 | CSS cont. / Present                                                             | Incomplete |
+| October 4 | Client consultation / Wireframes / Timeframes / README.md / Back-end development| Complete |
+| October 5 | Back-end development cont. / Backend review and deployment                      | Complete |
+| October 6 | Front-end development / Front-end review and deployment                         | Complete |
+| October 7 | CSS                                                                             | Complete |
+| October 8 | CSS cont / Media Queries                                                        | Complete |
+| October 11 | Present                                                                        | Complete |
