@@ -28,10 +28,11 @@
 }
 
 
-@media only screen and (max-width: 500px) {
+@media only screen and (max-width: 1500px) {
   
   .about-container {
     padding: .000001vh;
+    margin-top: 25vh;
   }
   
   .about-view {
@@ -41,16 +42,29 @@
     flex-direction: column;
   }
   
-  .about-description {
-    /* border: solid black 2px; */
+  #descrip {
+  font-size: .9rem;
+  }
+  
+}
+
+@media only screen and (max-width: 500px) {
+  
+  .about-container {
+    padding: .000001vh;
+    margin: .1vh;
+  }
+  
+  .about-view {
+    width: 100vw;
+    height: -10vh;
+    display: flex;
+    flex-direction: column;
   }
   
   #descrip {
   font-size: .9rem;
 
-  }
-  
-  #ab-title {
   }
   
 }

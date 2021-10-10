@@ -81,8 +81,29 @@ body {
   text-align: center;
 }
 
+@media only screen and (max-width: 500px) {
 
+  .home-images {
+    display: flex;
+    flex-direction: column;
+    height: 1vh;
+    width: 1vw;
+    margin-top: 104.4vh;
+  }
 
+  #shirts {
+    width: 100vw;
+  }
+
+  #hoodies {
+    width: 100vw;
+  }
+
+  #crewnecks {
+    width: 100vw;
+  }
+  
+}
 
 
 
