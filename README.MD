@@ -74,9 +74,7 @@ const Product = new Schema
 ### Component Tree
 ```
 |__ components/
-    |__ Home.jsx
     |__ Nav
-    |__ Footer
 |__ layout/
     |__ Layout.jsx
 |__ screens/
@@ -91,8 +89,6 @@ const Product = new Schema
       |__ CommentEdit.jsx
       |__ CommentForm.jsx
       |__ Comment.jsx
-
-
 |__ App.js/
 |__ App.css/
 |__ index.js/
