@@ -80,6 +80,7 @@ const Product = new Schema
 |__ layout/
     |__ Layout.jsx
 |__ screens/
+    |__ About.jsx
     |__ SignIn.jsx
     |__ SignUp.jsx
     |__ ProductList.jsx
