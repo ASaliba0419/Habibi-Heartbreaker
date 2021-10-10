@@ -1,7 +1,9 @@
 class SupportsController < ApplicationController
   before_action :set_support, only: [:show, :update, :destroy]
   before_action :authorize_request, only: [:create, :update, :destroy]
-  before_action :only_user_crud, only: [:create, :update, :destroy]
+  before_action :only_user_crud, only: [:update, :destroy]
+  before_action :only_user_add, only: :create
+
 
   # GET /supports
   def index
@@ -60,9 +62,12 @@ class SupportsController < ApplicationController
     end
 
     def only_user_crud
-      # @correct_user = @current_user.id == support_params[:user_id] 
       @support = Support.find(params[:id])
       @correct_user = @current_user.id == @support[:user_id] 
+    end
+
+    def only_user_add
+      @correct_user = @current_user.id == support_params[:user_id] 
     end
 
 end
