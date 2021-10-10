@@ -22,7 +22,6 @@ const Pview = () => {
 
   return (
     <>
-      <div className="container-product">
         <div className="container-view">
           <div className='product-view'>
             <img src={product.image} alt={product.name} />
@@ -34,7 +33,6 @@ const Pview = () => {
             </div>
           </div>
         </div>
-      </div>
     </>
   )
 }

@@ -36,26 +36,19 @@
 }
 
 @media only screen and (max-width: 500px) {
-  .container-product {
-    border: purple 2px solid;
-    display: flex;
-    flex-direction: column;
-  }
 
   .container-view {
-    margin: 7%;
     border: red 2px solid;
   }
   
   .product-view {
     border: blue 2px solid;
+    display: flex;
+    flex-direction: column;
   }
-  
   
   .product-stuff {
     border: yellow 2px solid;
-    text-align: center;
-    gap: 30px;
   }
     
 }
