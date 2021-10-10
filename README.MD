@@ -62,7 +62,7 @@ const Product = new Schema
 
 
 ### Wireframes
-![imgAlt](https://i.imgur.com/kgBBxDd.png)
+![imgAlt](https://res.cloudinary.com/dtp9f7dv2/image/upload/v1633889606/Habibi%20Heartbreaker/Figma/Screen_Shot_2021-10-10_at_2.12.46_PM_qtgtt3.png)
 
 
 
