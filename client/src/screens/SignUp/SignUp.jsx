@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import './SignUp.css'
 
 
 export default function Register(props) {
@@ -17,44 +18,60 @@ export default function Register(props) {
   };
 
   return (
-    <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        props.handleRegister(formData);
-      }}
-    >
-      <h3>Register</h3>
-      <label>
-        Username:
-        <input
-          type='text'
-          name='first_name'
-          value={formData.first_name}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
-      <label>
-        Email:
-        <input
-          type='text'
-          name='email'
-          value={formData.email}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
-      <label>
-        Password:
-        <input
-          type='password'
-          name='password'
-          value={formData.password}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
-      <button>Submit</button>
-    </form>
+    <>
+      <div className="signup-container">
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            props.handleRegister(formData);
+          }}
+        >
+          <h3>Let's get you signed up!</h3>
+          <label>
+            Username            <br />
+            <input
+              type='text'
+              name='first_name'
+              value={formData.first_name}
+              onChange={handleChange}
+            />
+          </label>
+
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <label>
+            Email            <br />
+            <input
+              type='text'
+              name='email'
+              value={formData.email}
+              onChange={handleChange}
+            />
+          </label>
+
+          <br />
+          <br />
+          <br />
+          <br />
+
+          <label>
+            Password            <br />
+
+            <input
+              type='password'
+              name='password'
+              value={formData.password}
+              onChange={handleChange}
+            />
+          </label>
+          <br />
+          <br />
+          <button>Submit</button>
+        </form>
+      </div>
+    </>
   );
 }
