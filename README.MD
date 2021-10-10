@@ -83,11 +83,10 @@ const Product = new Schema
     |__ About.jsx
     |__ Gallery.jsx
     |__ Home.jsx
+    |__ Products.jsx
+    |__ Pview.jsx
     |__ SignIn.jsx
     |__ SignUp.jsx
-    |__ ProductList.jsx
-    |__ ProductView.jsx
-    |__ Cart.jsx
 |__ App.js/
 |__ App.css/
 |__ index.js/
