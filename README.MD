@@ -108,6 +108,7 @@ const Product = new Schema
         |__ CommentEdit.jsx
       |__ CommentForm
         |__ CommentForm.css
+        |__ CommentForm.jsx
       |__ Comment
 |__ App.js/
 |__ App.css/
