@@ -37,18 +37,14 @@
 
 @media only screen and (max-width: 500px) {
 
-  .container-view {
-    border: red 2px solid;
-  }
   
   .product-view {
-    border: blue 2px solid;
     display: flex;
     flex-direction: column;
   }
   
   .product-stuff {
-    border: yellow 2px solid;
+  gap: .00001px;
   }
     
 }
