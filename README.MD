@@ -100,6 +100,7 @@ const Product = new Schema
       |__ SignIn.css
       |__ SignIn.jsx
     |__ SignUp
+      |__ SignUp.css
       |__ SignUp.jsx
     |__ Supports
       |__ CommentEdit
