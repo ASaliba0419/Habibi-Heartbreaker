@@ -1,5 +1,6 @@
 import { useState, useEffect } from 'react';
-import {useParams} from 'react-router-dom';
+import { useParams } from 'react-router-dom';
+import "./CommentEdit.css"
 
 export default function CommentEdit(props) {
   const [formData, setFormData] = useState({
@@ -28,13 +29,15 @@ export default function CommentEdit(props) {
   };
 
   return (
+    <>
+      <div className="edit-container">
     <form
       onSubmit={(e) => {
         e.preventDefault();
         props.handleEditUpdate(id, formData);
       }}
     >
-      <h3>Edit Food</h3>
+      <h3 id="edit-comment-title">Edit Comment</h3>
       <label>
         Description:
         <input
@@ -46,6 +49,8 @@ export default function CommentEdit(props) {
       </label>
       <br />
       <button>Submit</button>
-    </form>
+        </form>
+        </div>
+      </>
   );
 }

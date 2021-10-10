@@ -35,14 +35,6 @@
   margin: 0 25vh;
 }
 
-.edit-comment {
-
-}
-
-.delete-comment {
-
-}
-
 @media only screen and (max-width: 500px) {
   .image-comments {
     height: 400px;

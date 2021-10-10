@@ -1,0 +1,9 @@
+.edit-container {
+  display: flex;
+  justify-content: center;
+}
+
+
+#edit-comment-title {
+  text-align: center;
+}
