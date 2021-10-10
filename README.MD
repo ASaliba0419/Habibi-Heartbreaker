@@ -81,6 +81,7 @@ const Product = new Schema
     |__ Layout.jsx
 |__ screens/
     |__ About.jsx
+    |__ Gallery.jsx
     |__ SignIn.jsx
     |__ SignUp.jsx
     |__ ProductList.jsx
