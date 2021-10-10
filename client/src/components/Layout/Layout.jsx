@@ -8,7 +8,7 @@ const Layout = (props) => {
   return (
     <>
       <div>
-        <Nav currentUser={props.currentUser} handleLogout={props.handleLogout}/>
+        <Nav currentUser={props.currentUser} handleLogout={props.handleLogout} />
       </div>
       {props.children}
       <div>

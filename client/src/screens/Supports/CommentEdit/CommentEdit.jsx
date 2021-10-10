@@ -10,7 +10,7 @@ export default function CommentEdit(props) {
 
   useEffect(() => {
     const prefillFormData = () => {
-      const singleEdit = props.supports.find(support => support.id === Number(id) )
+      const singleEdit = props.supports.find(support => support.id === Number(id))
       setFormData({
         name: singleEdit.name
       });
@@ -31,26 +31,26 @@ export default function CommentEdit(props) {
   return (
     <>
       <div className="edit-container">
-    <form
-      onSubmit={(e) => {
-        e.preventDefault();
-        props.handleEditUpdate(id, formData);
-      }}
-    >
-      <h3 id="edit-comment-title">Edit Comment</h3>
-      <label>
-        Description:
-        <input
-          type='textarea'
-          name='description'
-          value={formData.name}
-          onChange={handleChange}
-        />
-      </label>
-      <br />
-      <button>Submit</button>
+        <form
+          onSubmit={(e) => {
+            e.preventDefault();
+            props.handleEditUpdate(id, formData);
+          }}
+        >
+          <h3 id="edit-comment-title">Edit Comment</h3>
+          <label>
+            Description:
+            <input
+              type='textarea'
+              name='description'
+              value={formData.name}
+              onChange={handleChange}
+            />
+          </label>
+          <br />
+          <button>Submit</button>
         </form>
-        </div>
-      </>
+      </div>
+    </>
   );
 }

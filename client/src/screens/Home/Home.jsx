@@ -16,21 +16,12 @@ const Home = () => {
               <div class='text'>Shirts</div>
             </div>
           </div>
-
-
-
-
           <div class='container'>
             <img id='hoodies' src="https://res.cloudinary.com/dtp9f7dv2/image/upload/v1633546641/Habibi%20Heartbreaker/Front%20page%20pictures/elliot_hoodies_nesfkr.png" alt="hoodies" />
             <div className='middle2'>
               <div class='text'>Hoodies</div>
             </div>
           </div>
-
-
-
-
-
           <div class='container'>
             <img id='crewnecks' src="https://res.cloudinary.com/dtp9f7dv2/image/upload/v1633546646/Habibi%20Heartbreaker/Front%20page%20pictures/crewnecks-p4_vnh9cz.png" alt="crew-necks" />
             <div className='middle3'>

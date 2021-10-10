@@ -22,17 +22,17 @@ const Pview = () => {
 
   return (
     <>
-        <div className="container-view">
-          <div className='product-view'>
-            <img src={product.image} alt={product.name} />
-            <div className="product-stuff">
-              <p id="pname">{product.name}</p>
-              <p id="psize">{product.size}</p>
-              <p id="pprice">${product.price}</p>
-              <p id="pdes">{product.description}</p>
-            </div>
+      <div className="container-view">
+        <div className='product-view'>
+          <img src={product.image} alt={product.name} />
+          <div className="product-stuff">
+            <p id="pname">{product.name}</p>
+            <p id="psize">{product.size}</p>
+            <p id="pprice">${product.price}</p>
+            <p id="pdes">{product.description}</p>
           </div>
         </div>
+      </div>
     </>
   )
 }
