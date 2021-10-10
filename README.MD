@@ -94,6 +94,7 @@ const Product = new Schema
       |__ Products.css
       |__ Products.jsx
     |__ Pview
+      |__ Pview.css
       |__ Pview.jsx
     |__ SignIn
     |__ SignUp
