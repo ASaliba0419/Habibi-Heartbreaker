@@ -89,7 +89,7 @@ const Product = new Schema
       |__ Gallery.jsx
     |__ Home
       |__ Home.css
-      
+      |__ Home.jsx
     |__ Products
     |__ Pview
     |__ SignIn
