@@ -89,6 +89,8 @@ const Product = new Schema
     |__ SignUp.jsx
     |__ Supports.jsx
       |__ CommentEdit.jsx
+      |__ CommentForm.jsx
+
 |__ App.js/
 |__ App.css/
 |__ index.js/
