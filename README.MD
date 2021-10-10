@@ -75,11 +75,14 @@ const Product = new Schema
 ```
 |__ components/
     |__ Layout
-      |__ Layout.jsx
       |__ Layout.css
+      |__ Layout.jsx
     |__ Nav
+      |__ Nav.css
+      |__ Nav.jsx
 |__ screens/
     |__ About
+      |__ About.css
     |__ Gallery
     |__ Home
     |__ Products
