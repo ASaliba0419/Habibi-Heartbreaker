@@ -87,6 +87,7 @@ const Product = new Schema
     |__ Pview.jsx
     |__ SignIn.jsx
     |__ SignUp.jsx
+    |__ Supports.jsx
 |__ App.js/
 |__ App.css/
 |__ index.js/
