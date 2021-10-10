@@ -12,7 +12,6 @@ import CommentForm from './screens/Supports/CommentForm/CommentForm';
 import CommentEdit from './screens/Supports/CommentEdit/CommentEdit'
 import { useEffect, useState } from 'react';
 import { Route, useHistory, Switch } from 'react-router-dom';
-
 import {
   loginUser,
   registerUser,

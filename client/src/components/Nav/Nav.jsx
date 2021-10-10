@@ -11,7 +11,7 @@ const Nav = (props) => {
         <header>
           {props.currentUser ? (
             <div className='navbar2'>
-              <p id='title2'>Welcome, {props.currentUser.first_name}</p>
+              <p id='title2'>Hi, {props.currentUser.first_name}</p>
               <Link to='/' id='title'>Habibi Heart-Breaker</Link>
               <button id='logout-btn' onClick={props.handleLogout}>Logout</button>
             </div>
@@ -34,7 +34,6 @@ const Nav = (props) => {
                 <Link to='/products'>Shop Now</Link>
                 <Link to='/about-the-owner'>About the Owner</Link>
                 <Link to='/supports' id='comments-nav'>Comments</Link>
-                <Link to='/cart'>My Cart</Link>
               </div>
             </div>
           )}
