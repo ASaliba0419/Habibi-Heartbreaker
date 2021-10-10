@@ -1,4 +1,5 @@
 import React, { useState } from 'react'
+import './CommentForm.css'
 
 
 const CommentForm = (props) => {
@@ -23,33 +24,37 @@ const CommentForm = (props) => {
         e.preventDefault()
         props.handleSupportCreate(formData)
       }}>
-      
 
 
 
-      <div>Leave a comment and support our cause!</div>
-      <div className='field'>
-        <input
-          value={formData.image}
-          onChange={handleChange}
-          type="text"
-          name='image'
-          placeholder='https://YourImageHere.com'
-          required
-        />
-      </div>
 
-      <div className="field">
-        <input
-          value={formData.description}
-          onChange={handleChange}
-          type="description"
-          name="description"
-          placeholder="Review Description" />
-      </div>
+        <div>
+          <h1>Leave a comment and support our cause!</h1>
+        </div>
+        <div className='field'>
+          <input
+            value={formData.image}
+            onChange={handleChange}
+            type="text"
+            name='image'
+            placeholder='https://YourImageHere.com'
+            required
+          />
+        </div>
 
-      <button type="submit">Submit your review</button>
-    </form>
+        <div className="field">
+          <input
+            value={formData.description}
+            onChange={handleChange}
+            type="description"
+            name="description"
+            placeholder="Review Description" />
+
+        </div>
+        <div className="sub-btn-container">
+          <button className="sub-button" type="submit">Submit</button>
+        </div>
+      </form>
 
     </div >
   )

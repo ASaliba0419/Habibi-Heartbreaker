@@ -1,0 +1,14 @@
+.form-wrapper {
+  margin: 15vh;
+  display: flex;
+  justify-content: center;
+}
+
+.field {
+  text-align: center;
+}
+
+.sub-btn-container {
+  display: flex;
+  justify-content: center;
+}

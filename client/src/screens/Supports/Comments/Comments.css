@@ -22,7 +22,11 @@
 .add-comment-button {
   display: flex;
   justify-content: center;
+}
 
+.add-button-container {
+  display: flex;
+  justify-content: center;
 }
 
 .comment-buttons {

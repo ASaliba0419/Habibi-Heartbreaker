@@ -26,3 +26,31 @@
   display: flex;
   justify-content: center;
 }
+
+
+@media only screen and (max-width: 500px) {
+  
+  .about-container {
+    padding: .000001vh;
+  }
+  
+  .about-view {
+    width: 100vw;
+    height: -10vh;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .about-description {
+    /* border: solid black 2px; */
+  }
+  
+  #descrip {
+  font-size: .9rem;
+
+  }
+  
+  #ab-title {
+  }
+  
+}
