@@ -83,6 +83,7 @@ const Product = new Schema
 |__ screens/
     |__ About
       |__ About.css
+      |__ About.jsx
     |__ Gallery
     |__ Home
     |__ Products
