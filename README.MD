@@ -114,6 +114,8 @@ const Product = new Schema
         |__ Comment.jsx
 |__ services
   |__ apiConfig.js
+  |__ products.js
+  |__ users.js
 |__ App.js/
 |__ App.css/
 |__ index.js/
