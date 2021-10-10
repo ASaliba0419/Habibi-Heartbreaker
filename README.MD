@@ -74,21 +74,20 @@ const Product = new Schema
 ### Component Tree
 ```
 |__ components/
+    |__ Layout
     |__ Nav
-|__ layout/
-    |__ Layout.jsx
 |__ screens/
-    |__ About.jsx
-    |__ Gallery.jsx
-    |__ Home.jsx
-    |__ Products.jsx
-    |__ Pview.jsx
-    |__ SignIn.jsx
-    |__ SignUp.jsx
-    |__ Supports.jsx
-      |__ CommentEdit.jsx
-      |__ CommentForm.jsx
-      |__ Comment.jsx
+    |__ About
+    |__ Gallery
+    |__ Home
+    |__ Products
+    |__ Pview
+    |__ SignIn
+    |__ SignUp
+    |__ Supports
+      |__ CommentEdit
+      |__ CommentForm
+      |__ Comment
 |__ App.js/
 |__ App.css/
 |__ index.js/
