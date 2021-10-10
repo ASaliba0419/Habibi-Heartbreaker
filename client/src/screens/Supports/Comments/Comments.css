@@ -42,3 +42,10 @@
 .delete-comment {
 
 }
+
+@media only screen and (max-width: 500px) {
+  .image-comments {
+    height: 400px;
+    width: 375px;
+  }
+}
