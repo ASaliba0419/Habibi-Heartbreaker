@@ -23,9 +23,9 @@ export default function Login(props) {
           e.preventDefault();
           props.handleLogin(formData);
         }}>
-          <h3>Login</h3>
+          <h3>Let's get you logged back in!</h3>
           <label>
-            Username:
+            Username            <br />
             <input
               type='text'
               name='first_name'
@@ -34,8 +34,10 @@ export default function Login(props) {
             />
           </label>
           <br />
+          <br />
+          <br />
           <label>
-            Password:
+            Password            <br />
             <input
               type='password'
               name='password'
@@ -45,6 +47,8 @@ export default function Login(props) {
           </label>
           <br />
           <Link to='/register'>Register</Link>
+          <br />
+          <br />
           <button>Submit</button>
         </form>
       </div>

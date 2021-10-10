@@ -40,7 +40,6 @@ export default function Register(props) {
           <br />
           <br />
           <br />
-          <br />
 
           <label>
             Email            <br />
@@ -52,7 +51,6 @@ export default function Register(props) {
             />
           </label>
 
-          <br />
           <br />
           <br />
           <br />
