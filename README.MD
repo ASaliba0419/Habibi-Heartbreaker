@@ -75,6 +75,7 @@ const Product = new Schema
 ```
 |__ components/
     |__ Layout
+      |__ Layout.jsx
     |__ Nav
 |__ screens/
     |__ About
