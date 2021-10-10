@@ -91,6 +91,7 @@ const Product = new Schema
       |__ Home.css
       |__ Home.jsx
     |__ Products
+      |__ Products.jsx
     |__ Pview
     |__ SignIn
     |__ SignUp
